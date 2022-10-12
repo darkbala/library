@@ -1,0 +1,419 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap");
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  text-decoration: none;
+  color: black;
+  font-family: "Poppins", sans-serif;
+}
+
+
+.mainHead{
+  width: 100%;
+  height: 70px;
+  background-color: rgba(23, 69, 59, 0.8);
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+.logoDiv{
+  display: flex;
+  align-items: center;
+  height: 100%;
+  gap: 10px;
+}
+.logo{
+  width: 50px;
+  height: 50px;
+}
+.logoH{
+  color: white;
+}
+.inputDiv{
+  width: 40%;
+  height: 40px;
+  background-color: white;
+  border-radius: 20px;
+  display: flex;
+}
+.inputHead{
+  width: 90%;
+  border: none;
+  border-radius: 20px 0px 0px 20px;
+  padding-left:10px;
+  font-size: 20px;
+}
+.btnHead{
+  width: 10%;
+  height: 100%;
+  background-color: white;
+  border: none;
+  border-left: 2px solid #e5e5e5;
+  border-radius: 0px 20px 20px 0px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+}
+.btnLogo{
+  width: 50%;
+  height: 60%;
+  opacity: 50%;
+}
+.btnHead:active{
+  border: 2px solid black;
+}
+.headEnd{
+  width: 25%;
+  height: 100%;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  gap: 10px;
+}
+.headEndA{
+  font-size: 20px;
+  color: white;
+  display: flex;
+  align-items: center;
+  gap: 5px;
+}
+.headEndFav{
+  width: 25px;
+  height: 25px;
+}
+
+
+
+
+
+/* нав закончен */
+
+.main {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  height: 720px;
+  margin: auto;
+  color: black;
+  background-color: #e5e5e5;
+}
+.bg {
+  background-image: url(https://kartinkin.net/pics/uploads/posts/2022-08/thumbs/1660140897_28-kartinkin-net-p-kartinka-s-knigami-dlya-fona-krasivo-28.jpg);
+  background-size: 100%;
+  width: 100%;
+  height: 100%;
+  background-position: right;
+  background-repeat: no-repeat;
+  display: flex;
+  justify-content: space-between;
+}
+section {
+  width: 50%;
+  height: 80%;
+  display:flex;
+  justify-content: space-around;
+  margin: auto;
+}
+
+.title {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+}
+.title h1 {
+  font-size: 60px;
+  font-weight: 600;
+  color: white;
+}
+
+.title p {
+  font-size: 1.2rem;
+  font-weight: 400;
+  color: white;
+}
+.title button {
+  width: 180px;
+  height: 60px;
+  margin-top: 40px;
+  background-color: green;
+  border-radius: 10px;
+  border: none;
+  font-size: 30px;
+}
+.title button:active{
+  border: 2px solid white;
+}
+
+.title button p{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 100%;
+  color: white;
+  cursor: pointer;
+}
+
+
+
+.Anibook {
+  position: relative;
+  height: 400px;
+  cursor: pointer;
+  transform-style: preserve-3d;
+  backface-visibility: visible;
+}
+
+.Anifront, .Aniback, .page1, .page2, .page3, .page4, .page5, .page6 {
+  transform-style: preserve-3d;
+  position: absolute;
+  width: 300px;
+  height: 100%;
+  top: 0; left: 0;
+  transform-origin: left center;
+  transition: transform .5s ease-in-out, box-shadow .35s ease-in-out;
+}
+
+.Anifront, .Aniback {
+  background: url(https://d1w7fb2mkkr3kw.cloudfront.net/assets/images/book/lrg/9780/7020/9780702044991.jpg);
+  background-size: 100%;
+}
+
+.Anifront, .page1, .page3, .page5 {
+  border-bottom-right-radius: .5em;
+  border-top-right-radius: .5em;
+}
+
+.back, .page2, .page4, .page6 {
+  border-bottom-right-radius: .5em;
+  border-top-right-radius: .5em;
+}
+
+.page1 { 
+  background: #efefef;
+}
+
+.page2 {
+  background: #efefef;
+}
+
+.page3 {
+  background: #f5f5f5;
+}
+
+.page4 {
+  background: #f5f5f5;
+}
+
+.page5 {
+  background: #fafafa;
+  padding: 10px;
+}
+.page6 {
+  background: #fdfdfd;
+  padding: 10px;
+}
+.page5 p{
+  font-size: 10px;
+}
+.page6 p{
+  font-size: 10px;
+}
+
+.Anibook:hover .Anifront {
+  transform: rotateY(-160deg) scale(1.1);
+  box-shadow: 0 1em 3em 0 rgba(0, 0, 0, .2);
+}
+
+.Anibook:hover .page1 {
+  transform: rotateY(-150deg) scale(1.1);
+  box-shadow: 0 1em 3em 0 rgba(0, 0, 0, .2);
+}
+
+.Anibook:hover .page2 {
+  transform: rotateY(-30deg) scale(1.1);
+  box-shadow: 0 1em 3em 0 rgba(0, 0, 0, .2);
+}
+
+.Anibook:hover .page3 {
+  transform: rotateY(-140deg) scale(1.1);
+  box-shadow: 0 1em 3em 0 rgba(0, 0, 0, .2);
+}
+
+.Anibook:hover .page4 {
+  transform: rotateY(-40deg) scale(1.1);
+  box-shadow: 0 1em 3em 0 rgba(0, 0, 0, .2);
+}
+
+.Anibook:hover .page5 {
+  transform: rotateY(-130deg) scale(1.1);
+  box-shadow: 0 1em 3em 0 rgba(0, 0, 0, .2);
+}
+
+.Anibook:hover .page6 {
+  transform: rotateY(-50deg) scale(1.1);
+  box-shadow: 0 1em 3em 0 rgba(0, 0, 0, .2);
+}
+
+.Anibook:hover .Aniback {
+  transform: rotateY(-20deg) scale(1.1);
+}
+.bookAni{
+  width: 45%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+
+
+
+
+/* Rustam code */
+
+.books {
+  width:80%;
+  height: 350px;
+  background-color: white;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  margin: auto;
+}
+.book {
+  width: 180px;
+  height: 250px;
+  transform: rotate(-10deg);
+  transition: 0.5s;
+}
+.book:hover {
+  box-shadow: 0px 5px 20px 10px rgba(0, 0, 0, 50%);
+  z-index: 1;
+  transform: rotate(0);
+}
+.bookImg {
+  width: 100%;
+  height: 100%;
+}
+.cardMain {
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  margin: auto;
+}
+.titleRus {
+  width: 100%;
+  height: 55px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  border-top: 3px solid rgba(23, 69, 59, 0.8);
+  border-bottom: 3px solid rgba(23, 69, 59, 0.8);
+}
+.titleH {
+  width: auto;
+  border-left: 3px solid  rgba(23, 69, 59, 0.8);
+  border-right: 3px solid  rgba(23, 69, 59, 0.8);
+  font-size: 35px;
+  color:  rgba(23, 69, 59, 0.8);
+  height: 100%;
+  padding: 0 10px;
+}
+/* emirlan */
+.EmirCard {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+}
+.miniCont {
+  width: 95%;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+.cardE {
+  background-image: url(https://wp-s.ru/wallpapers/2/7/479129640551064/kanada-noch-i-prekrasnyj-gorod.jpg);
+  height: 350px;
+  width: 250px;
+  background-position: center;
+  background-size: cover;
+  position: relative;
+  overflow: hidden;
+}
+
+.cardE span {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  background-color: rgb(112, 88, 88);
+  width: 100%;
+  padding: 10px 0 10px 0;
+  height: 50px;
+  transition: 0.5s;
+}
+
+.cardE span h4 {
+  color: white;
+  text-align: center;
+}
+.cardE span p {
+  display: none;
+}
+
+.cardE span:hover {
+  background-color: rgba(6, 255, 255, 0.411);
+  height: 250px;
+  transition: 1s;
+  z-index: 1;
+}
+
+.cardE span:hover p {
+  display: block;
+  color: white;
+  font-size: 16px;
+  text-align: center;
+}
+.description { 
+  padding: 20px 0 20px 0; 
+} 
+.description_cont { 
+  display: flex; 
+  flex-direction: column; 
+  align-items: center; 
+  justify-content: center; 
+  width: 100%; 
+} 
+ 
+.description_cont h4 { 
+  font-size: 1.8rem; 
+  font-weight: 500; 
+  margin: 15px 0; 
+  line-height: 1.2; 
+} 
+ 
+.description_cont p { 
+  font: 1.1rem "Poppins"; 
+  width: 650px; 
+  text-align: center; 
+  line-height: 2; 
+} 
+ 
+.container_des { 
+  width: 98%; 
+  display: flex; 
+  justify-content: space-around; 
+  gap: 150px; 
+  margin: 50px auto; 
+} 
+ 
+.container_des div h3 { 
+  font-size: 1.3rem; 
+  font-weight: 500; 
+  text-align: center; 
+}
